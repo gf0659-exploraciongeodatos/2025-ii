@@ -3,7 +3,13 @@
 
 format: jb-book
 root: index
+
 parts:
+  - caption: Información general
+    chapters:
+    - url: https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf
+      title: Programa del curso
+
   - caption: 1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS
     chapters:
     - file: contenido/1/conceptos-fundamentales-sistemas-bases-datos

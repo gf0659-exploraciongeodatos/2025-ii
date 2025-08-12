@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/4/postgis-construccion-geometrias';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="PostGIS - Raster" href="postgis-raster.html" />
-    <link rel="prev" title="PostGIS - Coordenadas geográficas" href="postgis-coordenadas-geograficas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,44 +179,14 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Información general</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf">Programa del curso</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1/conceptos-fundamentales-sistemas-bases-datos.html">Conceptos fundamentales sobre sistemas de base de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1/modelo-relacional.html">El modelo relacional</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2 - INTRODUCCIÓN AL LENGUAJE SQL</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../2/introduccion-sql.html">Introducción a SQL</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - DISEÑO DE BASES DE DATOS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../3/diseno-bases-datos.html">Diseño de bases de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - BASES DE DATOS ESPACIALES</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="conceptos-fundamentales-bases-datos-espaciales.html">Conceptos fundamentales de bases de datos espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-introduccion.html">PostGIS - Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-geometrias.html">PostGIS - Geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-relaciones-espaciales.html">PostGIS - Relaciones espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-joins-espaciales.html">PostGIS - Uniones (<em>joins</em>) espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-indices-espaciales.html">PostGIS - Índices espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-srs.html">PostGIS - Sistemas de referencia espacial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-coordenadas-geograficas.html">PostGIS - Coordenadas geográficas</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">PostGIS - Construcción de geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-raster.html">PostGIS - Raster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="duckdb-visualizacion.html">DuckDB - Visualización de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-01.html">Examen corto 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-02.html">Examen corto 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-03.html">Examen corto 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-04.html">Examen corto 04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-03.html">Tarea 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-05.html">Examen corto 05</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/proyecto.html">Proyecto</a></li>
 </ul>
 
     </div>
@@ -446,10 +416,10 @@ document.write(`
 <figure class="align-default" id="figure-st-centroid">
 <img alt="../../_images/st_centroid.png" src="../../_images/st_centroid.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">ST_Centroid() y ST_PointOnSurface(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-centroid" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Centroid() y ST_PointOnSurface(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-centroid" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>La función <a class="reference external" href="https://postgis.net/docs/ST_Centroid.html">ST_Centroid(geometry)</a> retorna un punto que está aproximadamente en el <a class="reference external" href="https://es.wikipedia.org/wiki/Centro_de_masas">centro de masas</a> de la geometría de entrada. Este cálculo es relativamente rápido, pero a veces es resultado no es apropiado, ya que el punto generado no necesariamente está en la geometría de entrada. Si la geometría de entrada tiene una convexidad, como en el caso de la <a class="reference internal" href="#figure-st-centroid"><span class="std std-numref">Fig. 28</span></a>, el centroide podría no estar en su interior.</p>
+<p>La función <a class="reference external" href="https://postgis.net/docs/ST_Centroid.html">ST_Centroid(geometry)</a> retorna un punto que está aproximadamente en el <a class="reference external" href="https://es.wikipedia.org/wiki/Centro_de_masas">centro de masas</a> de la geometría de entrada. Este cálculo es relativamente rápido, pero a veces es resultado no es apropiado, ya que el punto generado no necesariamente está en la geometría de entrada. Si la geometría de entrada tiene una convexidad, como en el caso de la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-st_centroid</span></code>, el centroide podría no estar en su interior.</p>
 <p>La función <a class="reference external" href="https://postgis.net/docs/ST_PointOnSurface.html">ST_PointOnSurface(geometry)</a> retorna un punto que se garantiza que está dentro de la geometría de entrada.</p>
 <p>La diferencia entre ambas funciones se muestra mediante la siguiente sentencia SQL:</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Comparación de ST_Centroid() y ST_PointOnSurface() para una geometría convexa</span>
@@ -475,7 +445,7 @@ document.write(`
 <figure class="align-default" id="figure-st-buffer">
 <img alt="../../_images/st_buffer.png" src="../../_images/st_buffer.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 29 </span><span class="caption-text">ST_Buffer(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-buffer" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Buffer(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-buffer" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>La función <a class="reference external" href="https://postgis.net/docs/ST_Buffer.html">ST_Buffer(geometry, distance)</a> toma como entradas una geometría y una distancia y retorna otra geometría con un límite a la distancia especificada de la geometría de entrada.</p>
@@ -505,11 +475,11 @@ document.write(`
 <figure class="align-default" id="figure-st-intersection">
 <img alt="../../_images/st_intersection.png" src="../../_images/st_intersection.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 30 </span><span class="caption-text">ST_Intersection(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-intersection" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Intersection(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-intersection" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>La función <a class="reference external" href="https://postgis.net/docs/ST_Intersection.html">ST_Intersection(geometry A, geometry B)</a> retorna el polígono, línea o punto que las geometrías de entrada tienen en común. Si las geometría son disjuntas, retorna una geometría vacía.</p>
-<p>La siguiente consulta obtiene la intersección de los dos círculos que se muestran en la <a class="reference internal" href="#figure-st-intersection"><span class="std std-numref">Fig. 30</span></a>.</p>
+<p>La siguiente consulta obtiene la intersección de los dos círculos que se muestran en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-st_intersection</span></code>.</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Intersección de dos círculos generados con ST_Buffer()</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="n">ST_AsText</span><span class="p">(</span><span class="n">ST_Intersection</span><span class="p">(</span>
 <span class="w">  </span><span class="n">ST_Buffer</span><span class="p">(</span><span class="s1">&#39;POINT(0 0)&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
@@ -529,7 +499,7 @@ En un SIG, grafique los círculos de la sentencia anterior y su intersección.</
 <figure class="align-default" id="figure-st-union">
 <img alt="../../_images/st_union.png" src="../../_images/st_union.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 31 </span><span class="caption-text">ST_Union(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-union" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Union(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-union" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Hay dos formas para la función <code class="docutils literal notranslate"><span class="pre">ST_Union()</span></code>:</p>
@@ -543,7 +513,7 @@ En un SIG, grafique los círculos de la sentencia anterior y su intersección.</
 <span class="p">));</span>
 </pre></div>
 </div>
-<p>El resultado se muestra en la <a class="reference internal" href="#figure-st-union"><span class="std std-numref">Fig. 31</span></a>.</p>
+<p>El resultado se muestra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-st_union</span></code>.</p>
 <ol class="arabic simple" start="2">
 <li><p><a class="reference external" href="https://postgis.net/docs/ST_Union.html">ST_Union(geometry)</a>: toma todas las geometrías de un conjunto (ej. de una tabla, de una consulta) y retorna su unión. Esta versión “agregada” puede usarse conjuntamente con la cláusula <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> para generar subconjuntos agrupados de geometrías individuales. Por ejemplo, la siguiente sentencia SQL une las geometrías de los cantones en provincias.</p></li>
 </ol>
@@ -612,24 +582,6 @@ Despliegue ambas capas en un mapa, junto con la capa de provincias, para así ap
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="postgis-coordenadas-geograficas.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">PostGIS - Coordenadas geográficas</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="postgis-raster.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PostGIS - Raster</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

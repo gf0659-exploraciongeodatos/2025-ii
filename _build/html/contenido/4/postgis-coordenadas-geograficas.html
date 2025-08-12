@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/4/postgis-coordenadas-geograficas';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="PostGIS - Construcción de geometrías" href="postgis-construccion-geometrias.html" />
-    <link rel="prev" title="PostGIS - Sistemas de referencia espacial" href="postgis-srs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,44 +179,14 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Información general</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf">Programa del curso</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1/conceptos-fundamentales-sistemas-bases-datos.html">Conceptos fundamentales sobre sistemas de base de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1/modelo-relacional.html">El modelo relacional</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2 - INTRODUCCIÓN AL LENGUAJE SQL</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../2/introduccion-sql.html">Introducción a SQL</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - DISEÑO DE BASES DE DATOS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../3/diseno-bases-datos.html">Diseño de bases de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - BASES DE DATOS ESPACIALES</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="conceptos-fundamentales-bases-datos-espaciales.html">Conceptos fundamentales de bases de datos espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-introduccion.html">PostGIS - Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-geometrias.html">PostGIS - Geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-relaciones-espaciales.html">PostGIS - Relaciones espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-joins-espaciales.html">PostGIS - Uniones (<em>joins</em>) espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-indices-espaciales.html">PostGIS - Índices espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-srs.html">PostGIS - Sistemas de referencia espacial</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">PostGIS - Coordenadas geográficas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-construccion-geometrias.html">PostGIS - Construcción de geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-raster.html">PostGIS - Raster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="duckdb-visualizacion.html">DuckDB - Visualización de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-01.html">Examen corto 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-02.html">Examen corto 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-03.html">Examen corto 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-04.html">Examen corto 04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-03.html">Tarea 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-05.html">Examen corto 05</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/proyecto.html">Proyecto</a></li>
 </ul>
 
     </div>
@@ -429,11 +399,11 @@ document.write(`
 <h1>PostGIS - Coordenadas geográficas<a class="headerlink" href="#postgis-coordenadas-geograficas" title="Link to this heading">#</a></h1>
 <section id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
-<p>A diferencia de las coordenadas en SRS como UTM o CRTM05, las coordenadas “geográficas” (latitud-longitud) no son <a class="reference external" href="https://es.wikipedia.org/wiki/Coordenadas_cartesianas">coordenadas cartesianas</a>. No representan una distancia lineal desde un origen hasta un destino, como se traza en un plano. Más bien, son coordenadas esféricas que describen coordenadas angulares en un globo. En las coordenadas esféricas, un punto se especifica por el ángulo de rotación desde un meridiano de referencia (longitud) y el ángulo desde el ecuador (latitud), como se ilustra en la <a class="reference internal" href="postgis-geometrias.html#figure-tablas-vistas-metadatos"><span class="std std-numref">Fig. 15</span></a>.</p>
+<p>A diferencia de las coordenadas en SRS como UTM o CRTM05, las coordenadas “geográficas” (latitud-longitud) no son <a class="reference external" href="https://es.wikipedia.org/wiki/Coordenadas_cartesianas">coordenadas cartesianas</a>. No representan una distancia lineal desde un origen hasta un destino, como se traza en un plano. Más bien, son coordenadas esféricas que describen coordenadas angulares en un globo. En las coordenadas esféricas, un punto se especifica por el ángulo de rotación desde un meridiano de referencia (longitud) y el ángulo desde el ecuador (latitud), como se ilustra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-tablas-vistas-metadatos</span></code>.</p>
 <figure class="align-default" id="figure-coordenadas-cartesianas-esfericas">
 <img alt="../../_images/coordenadas-cartesianas-esfericas.jpg" src="../../_images/coordenadas-cartesianas-esfericas.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Coordenadas cartesianas y coordenadas esféricas. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-coordenadas-cartesianas-esfericas" title="Link to this image">#</a></p>
+<p><span class="caption-text">Coordenadas cartesianas y coordenadas esféricas. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-coordenadas-cartesianas-esfericas" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Las mediciones de distancia, longitud y área, entre otras, no tienen sentido si las coordenadas geográficas se tratan como coordenadas cartesianas, ya que las coordenadas geográficas miden ángulos y sus unidades son grados. La distancia entre puntos se hace más grande a medida que se acercan a áreas problemáticas como los polos o la línea internacional de cambio de fecha.</p>
@@ -531,24 +501,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="postgis-srs.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">PostGIS - Sistemas de referencia espacial</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="postgis-construccion-geometrias.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PostGIS - Construcción de geometrías</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

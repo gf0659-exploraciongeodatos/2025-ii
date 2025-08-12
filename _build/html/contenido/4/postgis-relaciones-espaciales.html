@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/4/postgis-relaciones-espaciales';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="PostGIS - Uniones (joins) espaciales" href="postgis-joins-espaciales.html" />
-    <link rel="prev" title="PostGIS - Geometrías" href="postgis-geometrias.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,44 +179,14 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Información general</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf">Programa del curso</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1/conceptos-fundamentales-sistemas-bases-datos.html">Conceptos fundamentales sobre sistemas de base de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1/modelo-relacional.html">El modelo relacional</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2 - INTRODUCCIÓN AL LENGUAJE SQL</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../2/introduccion-sql.html">Introducción a SQL</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - DISEÑO DE BASES DE DATOS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../3/diseno-bases-datos.html">Diseño de bases de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - BASES DE DATOS ESPACIALES</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="conceptos-fundamentales-bases-datos-espaciales.html">Conceptos fundamentales de bases de datos espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-introduccion.html">PostGIS - Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-geometrias.html">PostGIS - Geometrías</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">PostGIS - Relaciones espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-joins-espaciales.html">PostGIS - Uniones (<em>joins</em>) espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-indices-espaciales.html">PostGIS - Índices espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-srs.html">PostGIS - Sistemas de referencia espacial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-coordenadas-geograficas.html">PostGIS - Coordenadas geográficas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-construccion-geometrias.html">PostGIS - Construcción de geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-raster.html">PostGIS - Raster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="duckdb-visualizacion.html">DuckDB - Visualización de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-01.html">Examen corto 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-02.html">Examen corto 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-03.html">Examen corto 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-04.html">Examen corto 04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-03.html">Tarea 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-05.html">Examen corto 05</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/proyecto.html">Proyecto</a></li>
 </ul>
 
     </div>
@@ -472,7 +442,7 @@ document.write(`
 <figure class="align-default" id="figure-st-equals">
 <img alt="../../_images/st_equals.png" src="../../_images/st_equals.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 19 </span><span class="caption-text">ST_Equals(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-equals" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Equals(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-equals" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="http://postgis.net/docs/ST_Equals.html">ST_Equals(geometry A, geometry B) </a> retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">A</span></code> y <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">B</span></code> son espacialmente iguales.</p>
@@ -506,7 +476,7 @@ document.write(`
 <figure class="align-default" id="figure-st-intersects">
 <img alt="../../_images/st_intersects.png" src="../../_images/st_intersects.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">ST_Intersects(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-intersects" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Intersects(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-intersects" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="http://postgis.net/docs/ST_Intersects.html">ST_Intersects(geometry A, geometry B)</a> retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">A</span></code> y <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">B</span></code> comparten espacio en sus bordes o en sus interiores.</p>
@@ -516,7 +486,7 @@ document.write(`
 <figure class="align-default" id="figure-st-disjoint">
 <img alt="../../_images/st_disjoint.png" src="../../_images/st_disjoint.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">ST_Disjoint(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-disjoint" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Disjoint(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-disjoint" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="http://postgis.net/docs/ST_Disjoint.html">ST_Disjoint(geometry A, geometry B)</a> retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">A</span></code> y <code class="docutils literal notranslate"><span class="pre">geometry</span> <span class="pre">B</span></code> no comparten espacio en sus bordes o en sus interiores. Es la función opuesta a <code class="docutils literal notranslate"><span class="pre">ST_Intersects()</span></code>. De hecho, es más eficiente usar la expresión <code class="docutils literal notranslate"><span class="pre">NOT</span> <span class="pre">(ST_Intersects(geometry</span> <span class="pre">A,</span> <span class="pre">geometry</span> <span class="pre">B))</span></code> que <code class="docutils literal notranslate"><span class="pre">ST_Disjoint(geometry</span> <span class="pre">A,</span> <span class="pre">geometry</span> <span class="pre">B)</span></code> debido a que las intersecciones pueden comprobarse mediante índices, mientras que las disjunciones no.</p>
@@ -526,7 +496,7 @@ document.write(`
 <figure class="align-default" id="figure-st-crosses">
 <img alt="../../_images/st_crosses.png" src="../../_images/st_crosses.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">ST_Crosses(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-crosses" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Crosses(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-crosses" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Para comparaciones de multipunto-polígono, multipunto-línea, línea-línea, línea-polígono y línea-multipolígono, <a class="reference external" href="http://postgis.net/docs/ST_Crosses.html">ST_Crosses(geometry A, geometry B)</a> retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si la intersección resulta en una geometría cuyo número de dimensiones es menor que el número máximo de dimensiones de las dos geometrías originales y el conjunto de intersección está en el interior de ambas geometrías originales.</p>
@@ -536,7 +506,7 @@ document.write(`
 <figure class="align-default" id="figure-st-overlaps">
 <img alt="../../_images/st_overlaps.png" src="../../_images/st_overlaps.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">ST_Overlaps(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-overlaps" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Overlaps(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-overlaps" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="http://postgis.net/docs/ST_Overlaps.html">ST_Overlaps(geometry A, geometry B)</a> compara dos geometrías de la misma cantidad de dimensiones y retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si su intersección resulta en una geometría diferente de ambas pero de la misma cantidad de dimensiones.</p>
@@ -546,7 +516,7 @@ document.write(`
 <figure class="align-default" id="figure-st-touches">
 <img alt="../../_images/st_touches.png" src="../../_images/st_touches.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">ST_Touches(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-touches" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Touches(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-touches" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference external" href="http://postgis.net/docs/ST_Touches.html">ST_Touches(geometry A, geometry B)</a> retorna <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si los límites de alguna de las geometrías se intersectan o si el interior de solo una de las geometrías intersecta el límite de la otra.</p>
@@ -557,7 +527,7 @@ document.write(`
 <figure class="align-default" id="figure-st-within">
 <img alt="../../_images/st_within.png" src="../../_images/st_within.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 25 </span><span class="caption-text">ST_Within() y ST_Contains(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-within" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_Within() y ST_Contains(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-within" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Tanto <code class="docutils literal notranslate"><span class="pre">ST_Within()</span></code> como <code class="docutils literal notranslate"><span class="pre">ST_Contains()</span></code> comprueban si una geometría está completamente dentro de la otra.</p>
@@ -594,7 +564,7 @@ document.write(`
 <figure class="align-default" id="figure-st-dwithin">
 <img alt="../../_images/st_dwithin.png" src="../../_images/st_dwithin.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">ST_DWithin(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-dwithin" title="Link to this image">#</a></p>
+<p><span class="caption-text">ST_DWithin(). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-st-dwithin" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>La función <a class="reference external" href="http://postgis.net/docs/ST_DWithin.html">ST_DWithin()</a> permite probar si dos objetos están a una cierta distancia el uno del otro. Esto es útil para preguntas como “¿cuántos árboles están dentro de un <em>buffer</em> de 500 metros de la carretera?”. Con <code class="docutils literal notranslate"><span class="pre">ST_DWithin()</span></code>, se puede comprobar la relación de distancia sin generar el <em>buffer</em>.</p>
@@ -667,24 +637,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="postgis-geometrias.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">PostGIS - Geometrías</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="postgis-joins-espaciales.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PostGIS - Uniones (<em>joins</em>) espaciales</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
