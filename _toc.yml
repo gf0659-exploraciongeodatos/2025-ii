@@ -5,7 +5,7 @@ format: jb-book
 root: index
 
 parts:
-  - caption: Información general
+  - caption: INFORMACIÓN GENERAL
     chapters:
     - url: https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf
       title: Programa del curso
