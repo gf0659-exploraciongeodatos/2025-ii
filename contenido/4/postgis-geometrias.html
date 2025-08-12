@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/4/postgis-geometrias';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="PostGIS - Relaciones espaciales" href="postgis-relaciones-espaciales.html" />
-    <link rel="prev" title="PostGIS - Introducción" href="postgis-introduccion.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,44 +179,14 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Información general</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf">Programa del curso</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1/conceptos-fundamentales-sistemas-bases-datos.html">Conceptos fundamentales sobre sistemas de base de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1/modelo-relacional.html">El modelo relacional</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2 - INTRODUCCIÓN AL LENGUAJE SQL</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../2/introduccion-sql.html">Introducción a SQL</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - DISEÑO DE BASES DE DATOS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../3/diseno-bases-datos.html">Diseño de bases de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - BASES DE DATOS ESPACIALES</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="conceptos-fundamentales-bases-datos-espaciales.html">Conceptos fundamentales de bases de datos espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-introduccion.html">PostGIS - Introducción</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">PostGIS - Geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-relaciones-espaciales.html">PostGIS - Relaciones espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-joins-espaciales.html">PostGIS - Uniones (<em>joins</em>) espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-indices-espaciales.html">PostGIS - Índices espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-srs.html">PostGIS - Sistemas de referencia espacial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-coordenadas-geograficas.html">PostGIS - Coordenadas geográficas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-construccion-geometrias.html">PostGIS - Construcción de geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-raster.html">PostGIS - Raster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="duckdb-visualizacion.html">DuckDB - Visualización de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-01.html">Examen corto 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-02.html">Examen corto 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-03.html">Examen corto 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-04.html">Examen corto 04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-03.html">Tarea 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-05.html">Examen corto 05</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/proyecto.html">Proyecto</a></li>
 </ul>
 
     </div>
@@ -514,11 +484,11 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">coord_dimension</span></code> y <code class="docutils literal notranslate"><span class="pre">srid</span></code>: definen la dimensión de las coordenadas de la geometría (2, 3 o 4) y el SRID (identificador del sistema de referencia espacial) registrado en la tabla <code class="docutils literal notranslate"><span class="pre">spatial_ref_sys</span></code> respectivamente.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">type</span></code>: especifica el tipo de geometría (<code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">LineString</span></code>, <code class="docutils literal notranslate"><span class="pre">Polygon</span></code>, <code class="docutils literal notranslate"><span class="pre">MultiPoint</span></code>, etc.).</p></li>
 </ul>
-<p>Las relaciones entre <code class="docutils literal notranslate"><span class="pre">geometry_columns</span></code>, <code class="docutils literal notranslate"><span class="pre">spatial_ref_sys</span></code> y las tablas con objetos espaciales (<em>feature tables</em>) se ilustra en la <a class="reference internal" href="#figure-tablas-vistas-metadatos"><span class="std std-numref">Fig. 15</span></a>.</p>
+<p>Las relaciones entre <code class="docutils literal notranslate"><span class="pre">geometry_columns</span></code>, <code class="docutils literal notranslate"><span class="pre">spatial_ref_sys</span></code> y las tablas con objetos espaciales (<em>feature tables</em>) se ilustra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-tablas-vistas-metadatos</span></code>.</p>
 <figure class="align-default" id="figure-tablas-vistas-metadatos">
 <img alt="../../_images/tablas-vistas-metadatos.png" src="../../_images/tablas-vistas-metadatos.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Tablas y vistas de metadatos de PostGIS. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-tablas-vistas-metadatos" title="Link to this image">#</a></p>
+<p><span class="caption-text">Tablas y vistas de metadatos de PostGIS. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-tablas-vistas-metadatos" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -554,11 +524,11 @@ document.write(`
 <p>Seguidamente, se detallan los diferentes tipos de geometrías y sus funciones asociadas.</p>
 <section id="puntos">
 <h3>Puntos<a class="headerlink" href="#puntos" title="Link to this heading">#</a></h3>
-<p>Un punto (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#Point">Point</a>) es una geometría de dimensión 0 que representa una única posición en el espacio de coordenadas, como se muestra en la <a class="reference internal" href="#figure-puntos"><span class="std std-numref">Fig. 16</span></a>.</p>
+<p>Un punto (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#Point">Point</a>) es una geometría de dimensión 0 que representa una única posición en el espacio de coordenadas, como se muestra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-puntos</span></code>.</p>
 <figure class="align-default" id="figure-puntos">
 <img alt="../../_images/puntos.png" src="../../_images/puntos.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Geometrías de puntos. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-puntos" title="Link to this image">#</a></p>
+<p><span class="caption-text">Geometrías de puntos. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-puntos" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Un punto se representa con una sola coordenada. Se utilizan para representar objetos cuando los detalles exactos, como la forma y el tamaño, no son importantes en la escala que se utiliza. Por ejemplo, las ciudades en un mapa del mundo pueden representarse como puntos, mientras que en un mapa a nivel provincial podrían mostrarse como polígonos.</p>
@@ -630,11 +600,11 @@ document.write(`
 </section>
 <section id="lineas">
 <h3>Líneas<a class="headerlink" href="#lineas" title="Link to this heading">#</a></h3>
-<p>Una línea o “cadena de” (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#LineString">LineString</a>) es una geometría de dimensión 1 formada por segmentos continuos, como se muestra en la <a class="reference internal" href="#figure-lineas"><span class="std std-numref">Fig. 17</span></a>.</p>
+<p>Una línea o “cadena de” (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#LineString">LineString</a>) es una geometría de dimensión 1 formada por segmentos continuos, como se muestra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-lineas</span></code>.</p>
 <figure class="align-default" id="figure-lineas">
 <img alt="../../_images/lineas.png" src="../../_images/lineas.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Geometrías de líneas. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-lineas" title="Link to this image">#</a></p>
+<p><span class="caption-text">Geometrías de líneas. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-lineas" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Una línea válida, según Simple Features, tiene cero, dos o más puntos, pero PostGIS también permite líneas de un solo punto. Las líneas pueden cruzarse entre sí (auto-intersectarse). Una línea es cerrada si los puntos inicial y final son los mismos. Una línea es simple si no se auto-intersecta. Objetos como carreteras y ríos suelen representarse como líneas.</p>
@@ -681,11 +651,11 @@ document.write(`
 </section>
 <section id="poligonos">
 <h3>Polígonos<a class="headerlink" href="#poligonos" title="Link to this heading">#</a></h3>
-<p>Una polígono (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#Polygon">Polygon</a>) es una región plana de dimensión 2 delimitada por un contorno exterior (la envoltura o <em>shell</em>) y cero o más contornos interiores (agujeros o <em>holes</em>). Cada contorno es un anillo lineal (<a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#LinearRing">LinearRing</a>), como se muestra en la <a class="reference internal" href="#figure-poligonos"><span class="std std-numref">Fig. 18</span></a>.</p>
+<p>Una polígono (tipo <a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#Polygon">Polygon</a>) es una región plana de dimensión 2 delimitada por un contorno exterior (la envoltura o <em>shell</em>) y cero o más contornos interiores (agujeros o <em>holes</em>). Cada contorno es un anillo lineal (<a class="reference external" href="https://postgis.net/docs/manual-3.4/using_postgis_dbmanagement.html#LinearRing">LinearRing</a>), como se muestra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-poligonos</span></code>.</p>
 <figure class="align-default" id="figure-poligonos">
 <img alt="../../_images/poligonos.png" src="../../_images/poligonos.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Geometrías de polígonos. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-poligonos" title="Link to this image">#</a></p>
+<p><span class="caption-text">Geometrías de polígonos. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-poligonos" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Los polígonos se utilizan para representar objetos cuyo tamaño y forma son importantes. Los límites de una ciudad, parques, planos de edificios o cuerpos de agua son comúnmente representados como polígonos cuando la escala es suficientemente detallada para ver su área. Las carreteras y ríos a veces pueden ser representados como polígonos.</p>
@@ -878,24 +848,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="postgis-introduccion.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">PostGIS - Introducción</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="postgis-relaciones-espaciales.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PostGIS - Relaciones espaciales</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

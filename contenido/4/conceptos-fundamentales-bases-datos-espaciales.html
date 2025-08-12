@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'contenido/4/conceptos-fundamentales-bases-datos-espaciales';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="PostGIS - Introducción" href="postgis-introduccion.html" />
-    <link rel="prev" title="Diseño de bases de datos" href="../3/diseno-bases-datos.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,44 +179,14 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Información general</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/gf0659-exploraciongeodatos/2025-ii/blob/main/contenido/informacion-general/programa-gf0659-exploraciongeodatos-2025-ii.pdf">Programa del curso</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1 - INTRODUCCIÓN A LOS SISTEMAS DE BASES DE DATOS</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../1/conceptos-fundamentales-sistemas-bases-datos.html">Conceptos fundamentales sobre sistemas de base de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1/modelo-relacional.html">El modelo relacional</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2 - INTRODUCCIÓN AL LENGUAJE SQL</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../2/introduccion-sql.html">Introducción a SQL</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3 - DISEÑO DE BASES DE DATOS</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../3/diseno-bases-datos.html">Diseño de bases de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">4 - BASES DE DATOS ESPACIALES</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Conceptos fundamentales de bases de datos espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-introduccion.html">PostGIS - Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-geometrias.html">PostGIS - Geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-relaciones-espaciales.html">PostGIS - Relaciones espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-joins-espaciales.html">PostGIS - Uniones (<em>joins</em>) espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-indices-espaciales.html">PostGIS - Índices espaciales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-srs.html">PostGIS - Sistemas de referencia espacial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-coordenadas-geograficas.html">PostGIS - Coordenadas geográficas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-construccion-geometrias.html">PostGIS - Construcción de geometrías</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgis-raster.html">PostGIS - Raster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="duckdb-visualizacion.html">DuckDB - Visualización de datos</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">EVALUACIONES</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-01.html">Examen corto 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-02.html">Examen corto 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-01.html">Tarea 01</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-03.html">Examen corto 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-02.html">Tarea 02</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-04.html">Examen corto 04</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/tarea-03.html">Tarea 03</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/examencorto-05.html">Examen corto 05</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../evaluaciones/proyecto.html">Proyecto</a></li>
 </ul>
 
     </div>
@@ -445,11 +415,11 @@ document.write(`
 </section>
 <section id="evolucion-del-manejo-de-datos-espaciales">
 <h2>Evolución del manejo de datos espaciales<a class="headerlink" href="#evolucion-del-manejo-de-datos-espaciales" title="Link to this heading">#</a></h2>
-<p>El manejo de datos espaciales ha evolucionado desde soluciones propietarias hasta geometrías integradas en la estructura de las bases de datos, como se ilustra en la <a class="reference internal" href="#figure-evolucion-manejo-datos-espaciales"><span class="std std-numref">Fig. 11</span></a>. Esta integración permite tratar a los datos espaciales de una manera no muy diferente a otros tipos de datos (<em>“spatial is not special”</em>).</p>
+<p>El manejo de datos espaciales ha evolucionado desde soluciones propietarias hasta geometrías integradas en la estructura de las bases de datos, como se ilustra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-evolucion-manejo-datos-espaciales</span></code>. Esta integración permite tratar a los datos espaciales de una manera no muy diferente a otros tipos de datos (<em>“spatial is not special”</em>).</p>
 <figure class="align-default" id="figure-evolucion-manejo-datos-espaciales">
 <img alt="../../_images/evolucion-manejo-datos-espaciales.png" src="../../_images/evolucion-manejo-datos-espaciales.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Evolución del manejo de datos espaciales. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-evolucion-manejo-datos-espaciales" title="Link to this image">#</a></p>
+<p><span class="caption-text">Evolución del manejo de datos espaciales. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-evolucion-manejo-datos-espaciales" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>En las primeras implementaciones de sistemas de información geográfica (SIG), todos los datos espaciales y no espaciales se almacenaban en archivos planos y se requería de un software especializado (generalmente propietario) para interpretarlos y manipularlos (ej. <a class="reference external" href="https://en.wikipedia.org/wiki/ArcInfo">ARC/INFO</a>). Los sistemas espaciales de segunda generación almacenaban algunos datos (generalmente los atributos no espaciales, como textos y números) en bases de datos relacionales, también con la ayuda de herramientas propietarias (ej. <a class="reference external" href="https://en.wikipedia.org/wiki/ArcSDE">ArcSDE</a>), pero aún carecían de la flexibilidad que proporciona una integración directa. Actualmente, las bases de datos integran completamente los datos espaciales con los otros tipos de datos <span id="id1">[<a class="reference internal" href="../../markdown.html#id33" title="PostGIS PSC &amp; OSGeo. Introduction to PostGIS. URL: https://postgis.net/workshops/postgis-intro/ (visited on 2023-08-14).">OSG</a>]</span>. De esta manera, los principales motores de bases de datos (ej. Oracle, PostgreSQL, MySQL) incluyen extensiones para manejar datos espaciales.</p>
@@ -481,11 +451,11 @@ document.write(`
 </section>
 <section id="tipos-de-datos-espaciales">
 <h2>Tipos de datos espaciales<a class="headerlink" href="#tipos-de-datos-espaciales" title="Link to this heading">#</a></h2>
-<p>Una base de datos convencional maneja tipos de datos como números, textos y fechas. Una base de datos espacial añade tipos para representar objetos espaciales (ej. puntos, líneas, polígonos, raster). El estándar SFA-CA define 17 tipos de geometrías de datos vectoriales, de las cuales siete son las más comúnmente utilizadas y se muestran en la <a class="reference internal" href="#figure-tipos-datos-espaciales"><span class="std std-numref">Fig. 12</span></a>.</p>
+<p>Una base de datos convencional maneja tipos de datos como números, textos y fechas. Una base de datos espacial añade tipos para representar objetos espaciales (ej. puntos, líneas, polígonos, raster). El estándar SFA-CA define 17 tipos de geometrías de datos vectoriales, de las cuales siete son las más comúnmente utilizadas y se muestran en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-tipos-datos-espaciales</span></code>.</p>
 <figure class="align-default" id="figure-tipos-datos-espaciales">
 <img alt="../../_images/tipos-datos-espaciales.png" src="../../_images/tipos-datos-espaciales.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Tipos de geometrías de datos vectoriales. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-tipos-datos-espaciales" title="Link to this image">#</a></p>
+<p><span class="caption-text">Tipos de geometrías de datos vectoriales. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-tipos-datos-espaciales" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -524,21 +494,21 @@ document.write(`
 </ol>
 <p>El índice B-tree permite búsquedas, inserciones y eliminaciones rápidas, ya que reduce la cantidad de comparaciones que deben hacerse. En lugar de tener que comparar el número 17 con cada número en la lista, solo fue necesario realizar unas pocas comparaciones para encontrarlo en el árbol.</p>
 <p>Sin embargo, debido a que las geometrías pueden superponerse y están dispuestos en un espacio bidimensional (o de más dimensiones), un B-tree no puede ser utilizado para indexarlas eficientemente. Las verdaderas bases de datos espaciales proporcionan un índice espacial que responde a la pregunta “¿qué objetos están dentro de este cuadro delimitador (<em>bounding box</em>) en particular?”.</p>
-<p>Un cuadro delimitador es el rectángulo más pequeño, paralelo a los ejes de coordenadas, capaz de contener una geometría, como se ilustra en la <a class="reference internal" href="#figure-cuadro-delimitador"><span class="std std-numref">Fig. 13</span></a>.</p>
+<p>Un cuadro delimitador es el rectángulo más pequeño, paralelo a los ejes de coordenadas, capaz de contener una geometría, como se ilustra en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-cuadro-delimitador</span></code>.</p>
 <figure class="align-default" id="figure-cuadro-delimitador">
 <img alt="../../_images/cuadro-delimitador.png" src="../../_images/cuadro-delimitador.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Cuadros delimitadores (<em>bounding boxes</em>). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-cuadro-delimitador" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cuadros delimitadores (<em>bounding boxes</em>). Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-cuadro-delimitador" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Los cuadros delimitadores se utilizan en lugar de polígonos más detallados (i.e. con más vértices) porque responder a la pregunta “¿está A dentro de B?” es muy intensivo computacionalmente para polígonos con muchos vértices, pero muy rápido en el caso de rectángulos. Incluso los polígonos y líneas más complejos pueden ser representados por un simple cuadro delimitador.</p>
 <p>Los índices deben funcionar rápidamente para ser útiles. Así que, en lugar de proporcionar resultados exactos, como lo hacen los B-trees, los índices espaciales proporcionan resultados aproximados. La pregunta “¿qué líneas están dentro de este polígono?” será interpretada por un índice espacial como “¿qué líneas tienen cuadros delimitadores que están contenidos dentro del cuadro delimitador de este polígono?”</p>
 <p>Los tipos de índices espaciales varían ampliamente entre las bases de datos. Las implementaciones más comunes son el <a class="reference external" href="https://es.wikipedia.org/wiki/%C3%81rbol-R">R-tree</a> y el <a class="reference external" href="https://es.wikipedia.org/wiki/Quadtree">Quadtree</a>, pero también hay <a class="reference external" href="https://en.wikipedia.org/wiki/Grid_(spatial_index)">índices basados en cuadrículas</a> e índices <a class="reference external" href="https://en.wikipedia.org/wiki/Geohash">GeoHash</a> implementados en otras bases de datos espaciales.</p>
-<p>El funcionamiento de un índice R-tree se ejemplifica en la <a class="reference internal" href="#figure-r-tree"><span class="std std-numref">Fig. 14</span></a>.</p>
+<p>El funcionamiento de un índice R-tree se ejemplifica en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-r-tree</span></code>.</p>
 <figure class="align-default" id="figure-r-tree">
 <img alt="../../_images/r-tree.png" src="../../_images/r-tree.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Índice R-tree. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-r-tree" title="Link to this image">#</a></p>
+<p><span class="caption-text">Índice R-tree. Fuente: <a class="reference external" href="https://postgis.net/workshops/postgis-intro/">Introduction to PostGIS</a>.</span><a class="headerlink" href="#figure-r-tree" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Este R-tree organiza los objetos espaciales de manera que una búsqueda espacial es un recorrido rápido a través del árbol. Para encontrar cuál objeto contiene el punto, pueden seguirse los siguientes pasos:</p>
@@ -605,24 +575,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../3/diseno-bases-datos.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Diseño de bases de datos</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="postgis-introduccion.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PostGIS - Introducción</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
