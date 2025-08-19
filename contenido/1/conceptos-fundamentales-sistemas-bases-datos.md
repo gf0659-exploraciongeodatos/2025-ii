@@ -338,7 +338,7 @@ En los siguientes ejercicios, debe instalar el SABD [PostgreSQL](https://www.pos
     - La ciudad con mayor población y la ciudad con menor población en la base de datos (sugerencia: use la cláusula [`ORDER BY`](https://www.w3schools.com/sql/sql_orderby.asp)).
 
 ### Carga de datos y consultas SQL (3)
-1. Descargue los los archivos XLSX con datos de estadísticas policiales del Organismo de Investigación Judicial (OIJ) de los años 2018-2023 disponibles en [Datos abiertos del OIJ](https://sitiooij.poder-judicial.go.cr/index.php/ayuda/servicios-policiales/servicios-a-organizaciones/indice-de-transparencia-del-sector-publico-costarricense/datos-abiertos) y conviértalos al formato CSV (para esto, puede usar una aplicación de hoja de cálculo como Calc o Excel). También puede encontrar los archivos ya exportados al formato CSV en [https://github.com/gf0659-exploraciongeodatos/2023-ii/tree/main/datos/oij/estadisticas-policiales/csv](https://github.com/gf0659-exploraciongeodatos/2023-ii/tree/main/datos/oij/estadisticas-policiales/csv).
+1. Descargue los los archivos XLSX con datos de estadísticas policiales del Organismo de Investigación Judicial (OIJ) de los años 2018-2024 disponibles en [Datos abiertos del OIJ](https://sitiooij.poder-judicial.go.cr/index.php/ayuda/servicios-policiales/servicios-a-organizaciones/indice-de-transparencia-del-sector-publico-costarricense/datos-abiertos) y conviértalos al formato CSV (para esto, puede usar una aplicación de hoja de cálculo como Calc o Excel).
 2. En QGIS, con el Administrador de fuentes de datos - Texto delimitado, cargue cada uno de los archivos CSV como una capa (no espacial). Especifique `Texto (cadena)` como el tipo de datos de todos los campos.
 3. En cada capa, con la Calculadora de campos de QGIS, cree las siguientes columnas:
     - `Fecha_Date` (tipo `Date`) = `to_date("Fecha", format('MM/dd/yyyy'))` o `to_date("Fecha", format('yyyy-MM-dd'))`. Esta columna es una transformación de `Fecha` (tipo `Texto (cadena)`) al tipo `Date`. El argumento de `format()` depende del orden que presenten el día, el mes y el año en el campo `Fecha`, así como del separador (ej. `/`, `-`).
@@ -352,17 +352,17 @@ En los siguientes ejercicios, debe instalar el SABD [PostgreSQL](https://www.pos
 ```sql
 -- Creación de tabla con unión de datos de tablas de estadísticas anuales
 CREATE TABLE oij AS
-SELECT * FROM oij23
+SELECT * FROM oij24
 UNION
-SELECT * FROM oij22;
+SELECT * FROM oij23;
 ```
 8. Con la cláusula [`GROUP BY`](https://www.w3schools.com/sql/sql_groupby.asp), agrupe y cuente los homicidios cometidos por mes (hasta julio inclusive) y año:
 
 ```sql
--- Agrupación de cantidad de homicidios por mes (hasta julio inclusive) y año
+-- Agrupación de cantidad de homicidios por mes y año
 SELECT "Mes", "Anio", COUNT(*) AS Homicidios
 FROM oij
-WHERE "Mes" <= 7 AND "SubDelito" = 'HOMICIDIO'
+WHERE "Delito" = 'HOMICIDIO'
 GROUP BY "Mes", "Anio"
 ORDER BY "Mes", "Anio";
 ```
@@ -374,7 +374,7 @@ ORDER BY "Mes", "Anio";
 -- Agrupación de cantidad de homicidios por provincia
 SELECT "Provincia", COUNT(*) AS Homicidios
 FROM oij
-WHERE "Anio" = 2023 AND "SubDelito" = 'HOMICIDIO'
+WHERE "Anio" = 2023 AND "Delito" = 'HOMICIDIO'
 GROUP BY "Provincia"
 ORDER BY Homicidios DESC;
 ```

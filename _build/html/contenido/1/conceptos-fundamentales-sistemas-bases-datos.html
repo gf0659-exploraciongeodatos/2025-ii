@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -419,10 +419,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="conceptos-fundamentales-sobre-sistemas-de-base-de-datos">
 <h1>Conceptos fundamentales sobre sistemas de base de datos<a class="headerlink" href="#conceptos-fundamentales-sobre-sistemas-de-base-de-datos" title="Link to this heading">#</a></h1>
-<p>Un sistema de base de datos es básicamente un sistema computarizado para mantener registros. Su propósito general es almacenar datos y permitir a los usuarios recuperar y modificar esos datos de acuerdo con sus solicitudes <span id="id1">[<a class="reference internal" href="../../markdown.html#id3" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>. A la colección de datos del sistema se le denomina base de datos.</p>
+<p>Un sistema de base de datos es básicamente un sistema computarizado para mantener registros. Su propósito general es almacenar datos y permitir a los usuarios recuperar y modificar esos datos de acuerdo con sus solicitudes <span id="id1">[<a class="reference internal" href="#id8" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>. A la colección de datos del sistema se le denomina base de datos.</p>
 <section id="ventajas">
 <h2>Ventajas<a class="headerlink" href="#ventajas" title="Link to this heading">#</a></h2>
-<p>Anteriormente, se acostumbraba manejar los datos por medio de archivos (ej. CSV, DBF, SHP), lo que provocaba varios inconvenientes <span id="id2">[<a class="reference internal" href="../../markdown.html#id5" title="Abraham Silberschatz, Henry Korth, and S. Sudarshan. Database System Concepts. McGraw-Hill Education, New York, NY, 7th edition edition, April 2019. ISBN 978-1-260-08450-4.">SKS19</a>]</span>:</p>
+<p>Anteriormente, se acostumbraba manejar los datos por medio de archivos (ej. CSV, DBF, SHP), lo que provocaba varios inconvenientes <span id="id2">[<a class="reference internal" href="#id10" title="Abraham Silberschatz, Henry Korth, and S. Sudarshan. Database System Concepts. McGraw-Hill Education, New York, NY, 7th edition edition, April 2019. ISBN 978-1-260-08450-4.">SKS19</a>]</span>:</p>
 <ul class="simple">
 <li><p><strong>Redundancia e inconsistencia de datos</strong>: los mismos datos podrían almacenarse en diferentes archivos, lo que puede dar lugar a inconsistencias (ej. el nombre de una misma persona escrito de varias formas).</p></li>
 <li><p><strong>Dificultades para acceder a los datos</strong>: necesidad de desarrollar un nuevo programa para cada nueva tarea.</p></li>
@@ -433,7 +433,7 @@ document.write(`
 <li><p><strong>Problemas de seguridad</strong>: cada usuario debería tener acceso a los datos relacionados con sus tareas, pero no necesariamente a la todos.</p></li>
 </ul>
 <p>Estas dificultades, entre otras, propiciaron el inicio del desarrollo de los sistemas de bases de datos, en las décadas de 1960 y 1970, los cuales ofrecieron soluciones a todos los problemas mencionados.</p>
-<p>Los sistemas de bases de datos ofrecen diversos beneficios. Uno de los más importantes es el de la independencia (física) de los datos. Podemos definir la independencia de los datos como la “inmunidad” que tienen los programas de aplicación ante los cambios en la forma almacenar o acceder físicamente a los datos. Entre otras cosas, la independencia de los datos requiere que se haga una clara distinción entre el modelo de datos y su implementación <span id="id3">[<a class="reference internal" href="../../markdown.html#id3" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>.</p>
+<p>Los sistemas de bases de datos ofrecen diversos beneficios. Uno de los más importantes es el de la independencia (física) de los datos. Podemos definir la independencia de los datos como la “inmunidad” que tienen los programas de aplicación ante los cambios en la forma almacenar o acceder físicamente a los datos. Entre otras cosas, la independencia de los datos requiere que se haga una clara distinción entre el modelo de datos y su implementación <span id="id3">[<a class="reference internal" href="#id8" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>.</p>
 </section>
 <section id="componentes">
 <h2>Componentes<a class="headerlink" href="#componentes" title="Link to this heading">#</a></h2>
@@ -441,12 +441,12 @@ document.write(`
 <figure class="align-default" id="figure-sistema-base-datos">
 <img alt="../../_images/sistema-base-datos.png" src="../../_images/sistema-base-datos.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Imagen simplificada de un sistema de base de datos <span id="id4">[<a class="reference internal" href="../../markdown.html#id3" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>.</span><a class="headerlink" href="#figure-sistema-base-datos" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Imagen simplificada de un sistema de base de datos <span id="id4">[<a class="reference internal" href="#id8" title="C. J. Date. Introduction to Database Systems, An. Pearson, Boston, 8th edition edition, July 2003. ISBN 978-0-321-19784-9.">Dat03</a>]</span>.</span><a class="headerlink" href="#figure-sistema-base-datos" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="software">
 <h3>Software<a class="headerlink" href="#software" title="Link to this heading">#</a></h3>
-<p>El software más importante de un sistema de base de datos es el <strong>sistema administrador de bases de datos (SABD o DBMS por sus siglas en inglés)</strong>, el cual maneja todos los accesos a la base de datos. Es una aplicación de propósito general que facilita los procesos de definición, construcción, manipulación y compartición de bases de datos entre varios usuarios y aplicaciones <span id="id5">[<a class="reference internal" href="../../markdown.html#id4" title="Ramez Elmasri and Shamkant Navathe. Fundamentals of Database Systems. Pearson, Hoboken, NJ, 7th edition edition, June 2015. ISBN 978-0-13-397077-7.">EN15</a>]</span>.</p>
+<p>El software más importante de un sistema de base de datos es el <strong>sistema administrador de bases de datos (SABD o DBMS por sus siglas en inglés)</strong>, el cual maneja todos los accesos a la base de datos. Es una aplicación de propósito general que facilita los procesos de definición, construcción, manipulación y compartición de bases de datos entre varios usuarios y aplicaciones <span id="id5">[<a class="reference internal" href="#id9" title="Ramez Elmasri and Shamkant Navathe. Fundamentals of Database Systems. Pearson, Hoboken, NJ, 7th edition edition, June 2015. ISBN 978-0-13-397077-7.">EN15</a>]</span>.</p>
 <ul class="simple">
 <li><p><strong>Definir</strong> una base de datos implica especificar los tipos de datos, estructuras y restricciones de los datos que se almacenarán en la base de datos. La definición de la base de datos o la información descriptiva también es almacenada por el DBMS en forma de un catálogo de base de datos o diccionario; esto se llama metadatos.</p></li>
 <li><p><strong>Construir</strong> la base de datos es el proceso de almacenar los datos en algún medio de almacenamiento que está controlado por el SABD.</p></li>
@@ -778,7 +778,7 @@ document.write(`
 <section id="carga-de-datos-y-consultas-sql-3">
 <h3>Carga de datos y consultas SQL (3)<a class="headerlink" href="#carga-de-datos-y-consultas-sql-3" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Descargue los los archivos XLSX con datos de estadísticas policiales del Organismo de Investigación Judicial (OIJ) de los años 2018-2023 disponibles en <a class="reference external" href="https://sitiooij.poder-judicial.go.cr/index.php/ayuda/servicios-policiales/servicios-a-organizaciones/indice-de-transparencia-del-sector-publico-costarricense/datos-abiertos">Datos abiertos del OIJ</a> y conviértalos al formato CSV (para esto, puede usar una aplicación de hoja de cálculo como Calc o Excel). También puede encontrar los archivos ya exportados al formato CSV en <a class="github reference external" href="https://github.com/gf0659-exploraciongeodatos/2023-ii/tree/main/datos/oij/estadisticas-policiales/csv">gf0659-exploraciongeodatos/2023-ii</a>.</p></li>
+<li><p>Descargue los los archivos XLSX con datos de estadísticas policiales del Organismo de Investigación Judicial (OIJ) de los años 2018-2024 disponibles en <a class="reference external" href="https://sitiooij.poder-judicial.go.cr/index.php/ayuda/servicios-policiales/servicios-a-organizaciones/indice-de-transparencia-del-sector-publico-costarricense/datos-abiertos">Datos abiertos del OIJ</a> y conviértalos al formato CSV (para esto, puede usar una aplicación de hoja de cálculo como Calc o Excel).</p></li>
 <li><p>En QGIS, con el Administrador de fuentes de datos - Texto delimitado, cargue cada uno de los archivos CSV como una capa (no espacial). Especifique <code class="docutils literal notranslate"><span class="pre">Texto</span> <span class="pre">(cadena)</span></code> como el tipo de datos de todos los campos.</p></li>
 <li><p>En cada capa, con la Calculadora de campos de QGIS, cree las siguientes columnas:</p>
 <ul class="simple">
@@ -794,18 +794,18 @@ document.write(`
 </ol>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Creación de tabla con unión de datos de tablas de estadísticas anuales</span>
 <span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">oij</span><span class="w"> </span><span class="k">AS</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">oij23</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">oij24</span>
 <span class="k">UNION</span>
-<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">oij22</span><span class="p">;</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">oij23</span><span class="p">;</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="8">
 <li><p>Con la cláusula <a class="reference external" href="https://www.w3schools.com/sql/sql_groupby.asp"><code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code></a>, agrupe y cuente los homicidios cometidos por mes (hasta julio inclusive) y año:</p></li>
 </ol>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Agrupación de cantidad de homicidios por mes (hasta julio inclusive) y año</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Agrupación de cantidad de homicidios por mes y año</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="ss">&quot;Mes&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Anio&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">Homicidios</span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">oij</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;Mes&quot;</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="ss">&quot;SubDelito&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;HOMICIDIO&#39;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;Delito&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;HOMICIDIO&#39;</span>
 <span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="ss">&quot;Mes&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Anio&quot;</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="ss">&quot;Mes&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Anio&quot;</span><span class="p">;</span>
 </pre></div>
@@ -819,7 +819,7 @@ document.write(`
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Agrupación de cantidad de homicidios por provincia</span>
 <span class="k">SELECT</span><span class="w"> </span><span class="ss">&quot;Provincia&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">Homicidios</span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">oij</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;Anio&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2023</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="ss">&quot;SubDelito&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;HOMICIDIO&#39;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="ss">&quot;Anio&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2023</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="ss">&quot;Delito&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;HOMICIDIO&#39;</span>
 <span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="ss">&quot;Provincia&quot;</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Homicidios</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
 </pre></div>
