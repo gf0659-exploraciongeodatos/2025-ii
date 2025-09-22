@@ -17,3 +17,6 @@ parts:
   - caption: 2 - INTRODUCCIÓN AL LENGUAJE SQL
     chapters:
     - file: contenido/2/introduccion-sql   
+  - caption: 3 - DISEÑO DE BASES DE DATOS
+    chapters:
+    - file: contenido/3/diseno-bases-datos   
